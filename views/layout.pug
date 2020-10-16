@@ -1,7 +1,19 @@
 doctype html
 html
   head
+    link(rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Comfortaa")
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
+  
   body
+    header.page-header
+      .headContent
+        img(src="../images/Pix-logo-full.png")
+        p placeholder!
+
+      ul.navbar
+        <li><a href="#1">1</a></li>
+        <li><a href="#2">2</a></li>
+        <li><a href="#3">3</a></li>
+
     block content

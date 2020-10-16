@@ -1,25 +1,109 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: indianred;
+  font: 14px Verdana, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(#fff, aquamarine);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+h2 {
+  margin: 0;
+}
+
+/*Header*/
+.page-header {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.headContent {
+  padding: 15px;
+  /*background-color: white; later use*/
+}
+
+.headContent img {
+  /* border-radius: 10px; optional*/
+  width: 250px;
+}
+
+.headContent h1 {
+  float: left;
+  font-family: Comfortaa;
+}
+
+.headContent p {
+  float: right;
+  padding-top: 20px;
+  font-family: Verdana;
+}
+
+.navbar {
+  list-style-type: none;
+  width: 97%; /*fix*/
+  background-color: black;
+  overflow: auto;
+  margin: 0;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a:hover {
+  background-color: rgb(87, 87, 87);
+}
+
+/*Block content- (below navbar)*/
+.container {
+  width: 100%;
+  margin:0 auto;
+}
+
+/*Content- entries*/
 #entries {
-  padding-left: 0px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color:aquamarine;
+  width: 50%;
+  padding: 10px;
+  padding-top: 20px;
+  background-color: black; /*gradient possible*/
   margin: 0 auto;
-
+  border-radius: 5px;
 }
-.entry {
-    list-style-type: none;
-    text-align: center;
-    background-color: olivedrab;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    width: 300px;
-    border-radius: 100px;
 
+.entry {
+  list-style-type: none; 
+}
+
+.entry:hover{
+  opacity: 0.5; 
+}
+
+.module-border-wrap {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(to right, aquamarine, darkblue);
+  padding: 3px;
+}
+
+.module {
+  border-radius: 50px;
+  background-color:white;
+  color: black;
+  padding: 1rem;
 }
 
 a {

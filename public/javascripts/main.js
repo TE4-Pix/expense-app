@@ -14,13 +14,13 @@ fetch(`https://api.airtable.com/v0/appG8rx5wJGkinFFe/Receipt%20Log?api_key=keylp
         li.classList.add('entry');
 
         const markup = `
-                <div>
+                <div class="module-border-wrap"><div class="module">
                     <h2>
                     <span>${item.fields['Short Description']}</span>
                     <div class=divTotal>$${item.fields.Total}</div>
                     </h2>
-                </div>
-        `;
+                </div></div> 
+        `; //experiment lol
 
         li.innerHTML = markup;
         document.getElementById('entries').appendChild(li);
@@ -30,8 +30,6 @@ fetch(`https://api.airtable.com/v0/appG8rx5wJGkinFFe/Receipt%20Log?api_key=keylp
     });
     
 
-
-    
 })
 .catch(() => {
     console.log('ERROR');
