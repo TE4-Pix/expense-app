@@ -1,8 +1,23 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: indianred;
 }
+#entries {
+    background-color:aquamarine;
+    margin: 0 auto;
 
+}
+.entry {
+    list-style-type: none;
+    text-align: center;
+    background-color: olivedrab;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 200px;
+    border-radius: 100px;
+
+}
 a {
   color: #00B7FF;
 }
