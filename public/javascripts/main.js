@@ -17,7 +17,7 @@ fetch(`https://api.airtable.com/v0/appG8rx5wJGkinFFe/Receipt%20Log?api_key=keylp
                 <div>
                     <h2>
                     <span>${item.fields['Short Description']}</span>
-                    <div id=divTotal>$${item.fields.Total}</div>
+                    <div class=divTotal>$${item.fields.Total}</div>
                     </h2>
                 </div>
         `;
@@ -32,9 +32,7 @@ fetch(`https://api.airtable.com/v0/appG8rx5wJGkinFFe/Receipt%20Log?api_key=keylp
 
 
     
-});
-/**
+})
 .catch(() => {
     console.log('ERROR');
 });
-*/
