@@ -2,7 +2,7 @@ body {
   font: 14px Verdana, Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(#fff, aquamarine);
+  background-image: linear-gradient(white, violet);   /*(#fff, aquamarine);*/
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,7 +24,7 @@ h2 {
 }
 
 .headContent img {
-  /* border-radius: 10px; optional*/
+  border-radius: 5px;
   width: 250px;
 }
 
@@ -36,9 +36,11 @@ h2 {
 .headContent p {
   float: right;
   padding-top: 20px;
-  font-family: Verdana;
+  font-family: comfortaa;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
 }
-
+    /*Navbar*/
 .navbar {
   list-style-type: none;
   width: 97%; /*fix*/
@@ -65,16 +67,31 @@ h2 {
 
 /*Block content- (below navbar)*/
 .container {
-  width: 100%;
+  width: 80%;
+  min-height: 500px;
   margin:0 auto;
 }
 
-/*Content- entries*/
+.container p {
+  font-family: comfortaa;
+  padding: 1rem;
+  float: left;
+  width: 28%;
+  margin: 0 auto;
+  margin-right: 10px;
+  padding-bottom: 430px; /*Test*/
+  background-color: rgb(20, 20, 20);
+  color: white;
+  border-radius: 5px;
+}
+
+    /*Content- entries*/
 #entries {
-  width: 50%;
+  float: right;
+  width: 65%;
   padding: 10px;
   padding-top: 20px;
-  background-color: black; /*gradient possible*/
+  background-color: rgb(20, 20, 20); /*gradient possible*/
   margin: 0 auto;
   border-radius: 5px;
 }
@@ -83,10 +100,7 @@ h2 {
   list-style-type: none; 
 }
 
-.entry:hover{
-  opacity: 0.5; 
-}
-
+    /*Gradient border*/
 .module-border-wrap {
   width: 60%;
   margin: 0 auto;
@@ -95,7 +109,7 @@ h2 {
   margin-bottom: 20px;
   padding: 1rem;
   position: relative;
-  background: linear-gradient(to right, aquamarine, darkblue);
+  background: linear-gradient(to right, aquamarine, violet);
   padding: 3px;
 }
 
@@ -104,6 +118,29 @@ h2 {
   background-color:white;
   color: black;
   padding: 1rem;
+}
+
+.module:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+/*Footer*/
+.page-footer {
+  width: 100%;
+  height: 250px;
+  background-color: rgb(20, 20, 20);
+  margin-top: 60px;
+}
+
+.footContent {
+  padding: 20px;
+  color: white;
+}
+
+.footContent p {
+  font-family: comfortaa;
+  letter-spacing: 0.5rem;
 }
 
 a {

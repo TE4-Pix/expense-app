@@ -14,13 +14,13 @@ fetch(`https://api.airtable.com/v0/appG8rx5wJGkinFFe/Receipt%20Log?api_key=keylp
         li.classList.add('entry');
 
         const markup = `
-                <div class="module-border-wrap"><div class="module">
+                <div class="module-border-wrap"><div class="module"> 
                     <h2>
                     <span>${item.fields['Short Description']}</span>
                     <div class=divTotal>$${item.fields.Total}</div>
                     </h2>
                 </div></div> 
-        `; //experiment lol
+        `; //Module = Gradient border div
 
         li.innerHTML = markup;
         document.getElementById('entries').appendChild(li);
