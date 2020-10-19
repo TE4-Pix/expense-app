@@ -78,10 +78,11 @@ h2 {
 
 /*right*/
 #rightColumn {
+  font-family: comfortaa;
+  color: white;
   float: right;
   width: 65%;
   padding: 10px;
-  padding-top: 20px;
   background-color: rgb(20, 20, 20);
   margin: 0 auto;
   border-radius: 5px;
@@ -89,7 +90,7 @@ h2 {
 
   /*Content- entries*/
 #entries {
-  
+  padding: 0;
   font-family: comfortaa;
 }
 
@@ -99,26 +100,58 @@ h2 {
 
     /*Gradient border*/
 .module-border-wrap {
+  border-radius: 3px;
   width: 60%;
   margin: 0 auto;
-  text-align: center;
   margin-bottom: 20px;
-  padding: 1rem;
   position: relative;
   background: linear-gradient(to right, aquamarine, violet);
   padding: 3px;
 }
 
 .module {
-  background-color:white;
+  background-color:rgb(250, 250, 250);
+  border-radius: 3px;
   color: black;
-  padding: 1rem;
+  padding: 0rem;
+  height: 70px;
+}
+
+    /*Entries info*/
+.editDelete {
+  overflow: auto;
+  margin: 1px;
+  float: right;
+}
+
+.btnEdit {
+  font-size: 15px;
+  font-family: comfortaa;
+  border: none;
+  background: none;
+  transition-duration: 0.3s;
+}
+
+.btnDelete {
+  font-size: 15px;
+  font-family: comfortaa;
+  border: none;
+  background: none;
+  transition-duration: 0.3s;
+}
+
+.btnEdit:hover {
+  color: rgb(0, 255, 0);
+}
+
+.btnDelete:hover {
+  color: rgb(255, 0, 0);
 }
 
 /*Left*/
 #leftColumn {
   font-family: comfortaa;
-  padding: 20px;
+  padding: 10px;
   float: left;
   width: 28%;
   margin: 0 auto;
@@ -140,7 +173,7 @@ h2 {
   font-family: comfortaa;
   font-size: 0.8rem;
   font-weight: bold;
-  background: white;
+  background: rgb(250, 250, 250);
   color: black;
   border: 2px solid #00abe4; 
   padding: 0.5rem;
