@@ -8,13 +8,24 @@ block content
       ul#entries
 
     .leftColumn
+    #rightColumn  
+      ul#entries
+    #leftColumn
       form(id='formAdd')
+        h2 Add Entry
+        hr
+        br
         p
-          | title: 
+          | Title: 
           input(id='title', type='text', name='title')
-          | price: 
+          br 
+          br
+          | Price: 
           input(id='price', type='text', name='price')
-        input(type='submit', value='Submit')
+          br
+          br
+        input(type='submit', class="button", value='Add Entry')
+
   script(src='/javascripts/addExpense.js')
   script(src='/javascripts/main.js')
     
