@@ -43,7 +43,8 @@ h2 {
     /*Navbar*/
 .navbar {
   list-style-type: none;
-  width: 97%; /*fix*/
+  padding: 0;
+  width: 100%;
   background-color: black;
   overflow: auto;
   margin: 0;
@@ -53,7 +54,8 @@ h2 {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 15px 20px;
+  margin-left: 3rem; 
   text-decoration: none;
 }
 
@@ -67,22 +69,32 @@ h2 {
 
 /*Block content- (below navbar)*/
 .container {
+  display: block;
   width: 80%;
   min-height: 500px;
   margin:0 auto;
+  padding: 0;
 }
 
-.container p {
+.leftColumn {
   font-family: comfortaa;
   padding: 1rem;
   float: left;
   width: 28%;
   margin: 0 auto;
   margin-right: 10px;
-  padding-bottom: 430px; /*Test*/
+  /* padding.bottom: 100px; Test*/
   background-color: rgb(20, 20, 20);
   color: white;
   border-radius: 5px;
+}
+
+.leftColumn ul {
+  line-height: 2rem;
+}
+
+.leftColumn p {
+  font-family: verdana;
 }
 
     /*Content- entries*/
