@@ -115,17 +115,12 @@ h2 {
   background-color:rgb(250, 250, 250);
   border-radius: 3px;
   color: black;
-  padding: 0rem;
-  height: 70px;
+  padding: 0rem; /*0 = Thiccc top border*/
+  height: 50px;
 }
 
     /*Entries info*/
-.divTotal {
-  float: left;
-  padding: 1%;
-}
-
-.expenseTitle {
+.divTotal, .expenseTitle {
   float: left;
   padding: 1%;
 }
