@@ -16,10 +16,10 @@ fetch(`https://api.airtable.com/v0/appG8rx5wJGkinFFe/Receipt%20Log?api_key=keylp
         const markup = `
                 <div class="module-border-wrap"><div class="module"> 
                     <h2>
-                    <span>${item.fields['Short Description']}</span>
+                    <span class='expenseTitle'>${item.fields['Short Description']}</span>
                     <div class=divTotal>$${item.fields.Total}</div>
                     </h2>
-                    <p class="editDelete"><form action="/edit" method="get" onsubmit="myFunction()"><button class="btnEdit" name="e" value="${item.id}">Edit</button><button class="btnDelete" name="delete" value="${item.id}">Delete</button></form></p>
+                    <p class="editDelete"><form action="/edit" method="get"><button class="btnDelete" name="delete" value="${item.id}">Delete</button><button class="btnEdit" name="e" value="${item.id}">Edit</button></form></p>
                 </div></div> 
         `; //Module = Gradient border div
 
@@ -37,13 +37,3 @@ fetch(`https://api.airtable.com/v0/appG8rx5wJGkinFFe/Receipt%20Log?api_key=keylp
 .catch(() => {
     console.log('ERROR');
 });
-
-var buttons = document.getElementsByClassName("button");
-
-for (var i = 0 ; i < buttons.length; i++) {
-    buttons[i].addEventListener('click' , myFunction); 
-}
-
-function myFunction() {
-    console.log('hello');
-}
