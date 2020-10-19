@@ -19,7 +19,7 @@ document.getElementById('formAdd').addEventListener('submit', e => {
         
         "fields": {
             "Short Description": inputTitle,
-            "Total": 11
+            "Total": parseInt(inputPrice)
         }
         
     }
@@ -29,6 +29,6 @@ document.getElementById('formAdd').addEventListener('submit', e => {
     .then(json => console.log(json))
     .catch(err => console.log(err));
            
-    //window.location.reload();
+    window.location.reload();
 
 });
