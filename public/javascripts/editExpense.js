@@ -1,0 +1,1 @@
+document.getElementsByClassName('btnEdit').addEventListener

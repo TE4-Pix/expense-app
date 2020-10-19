@@ -19,15 +19,17 @@ fetch(`https://api.airtable.com/v0/appG8rx5wJGkinFFe/Receipt%20Log?api_key=keylp
                     <span>${item.fields['Short Description']}</span>
                     <div class=divTotal>$${item.fields.Total}</div>
                     </h2>
-                    <p class="editDelete"><button class="btnEdit">Edit</button> <button class="btnDelete">Delete</button></p>
+                    <p class="editDelete"><form method="get"><button class="btnEdit" name="edit" value="${item.id}">Edit</button><button class="btnDelete" name="delete" value="${item.id}">Delete</button></form></p>
                 </div></div> 
         `; //Module = Gradient border div
 
+        
+        
         li.innerHTML = markup;
         document.getElementById('entries').appendChild(li);
         
 
-        console.log('hello');
+        console.log(item.id);
     });
     
 
@@ -35,3 +37,11 @@ fetch(`https://api.airtable.com/v0/appG8rx5wJGkinFFe/Receipt%20Log?api_key=keylp
 .catch(() => {
     console.log('ERROR');
 });
+
+/**
+document.getElementsByClassName('btnEdit').addEventListener( e => {
+    e.preventDefault();
+    
+    console.log('hello');
+});
+*/
