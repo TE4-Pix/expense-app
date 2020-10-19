@@ -28,6 +28,11 @@ document.getElementById('formEdit').addEventListener('submit', e => {
     .then(json => console.log(json))
     .catch(err => console.log(err));
     
+    setTimeout(function(){ 
+        location.reload();
+        
+    }, 500);
+
     
 
 });
