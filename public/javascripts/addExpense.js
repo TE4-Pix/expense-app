@@ -8,7 +8,6 @@ document.getElementById('formAdd').addEventListener('submit', e => {
     console.log(inputTitle, inputPrice);
 
     const url = 'https://api.airtable.com/v0/appG8rx5wJGkinFFe/Receipt%20Log';
-    
 
     const apiHeaders = {
         'Authorization' : 'Bearer keylpPfWBTCbx5mnW',

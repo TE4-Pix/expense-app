@@ -19,6 +19,7 @@ fetch(`https://api.airtable.com/v0/appG8rx5wJGkinFFe/Receipt%20Log?api_key=keylp
                     <span>${item.fields['Short Description']}</span>
                     <div class=divTotal>$${item.fields.Total}</div>
                     </h2>
+                    <p class="editDelete">Edit Delete</p>
                 </div></div> 
         `; //Module = Gradient border div
 
