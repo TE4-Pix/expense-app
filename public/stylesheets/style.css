@@ -69,11 +69,20 @@ h2 {
 
 /*Block content- (below navbar)*/
 .container {
-  display: block;
+  overflow: auto;
   width: 80%;
-  min-height: 500px;
   margin:0 auto;
   padding: 0;
+}
+
+.rightColumn {
+  float: right;
+  width: 65%;
+  padding: 10px;
+  padding-top: 20px;
+  background-color: rgb(20, 20, 20);
+  margin: 0 auto;
+  border-radius: 5px;
 }
 
 .leftColumn {
@@ -83,7 +92,6 @@ h2 {
   width: 28%;
   margin: 0 auto;
   margin-right: 10px;
-  /* padding.bottom: 100px; Test*/
   background-color: rgb(20, 20, 20);
   color: white;
   border-radius: 5px;
@@ -99,13 +107,8 @@ h2 {
 
     /*Content- entries*/
 #entries {
-  float: right;
-  width: 65%;
-  padding: 10px;
-  padding-top: 20px;
-  background-color: rgb(20, 20, 20); /*gradient possible*/
-  margin: 0 auto;
-  border-radius: 5px;
+  
+  font-family: comfortaa;
 }
 
 .entry {
@@ -117,7 +120,6 @@ h2 {
   width: 60%;
   margin: 0 auto;
   text-align: center;
-  border-radius: 50px;
   margin-bottom: 20px;
   padding: 1rem;
   position: relative;
@@ -126,7 +128,6 @@ h2 {
 }
 
 .module {
-  border-radius: 50px;
   background-color:white;
   color: black;
   padding: 1rem;
