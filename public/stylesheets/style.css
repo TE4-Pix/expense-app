@@ -35,7 +35,7 @@ h2 {
 
 #headContent p {
   float: right;
-  padding-top: 20px;
+  padding-top: 1rem;
   font-family: comfortaa;
   font-weight: bold;
   letter-spacing: 0.5rem;
@@ -85,6 +85,7 @@ h2 {
   padding: 10px;
   background-color: rgb(20, 20, 20);
   margin: 0 auto;
+  margin-left: 3%;
   border-radius: 5px;
 }
 
@@ -96,6 +97,7 @@ h2 {
 
 .entry {
   list-style-type: none; 
+  overflow: auto; /*test effect*/
 }
 
     /*Gradient border*/
@@ -118,41 +120,49 @@ h2 {
 }
 
     /*Entries info*/
-.editDelete {
-  overflow: auto;
-  margin: 1px;
-  float: right;
+.divTotal {
+  float: left;
+  padding: 1%;
 }
 
-.btnEdit {
-  font-size: 15px;
-  font-family: comfortaa;
-  border: none;
-  background: none;
-  transition-duration: 0.3s;
+.expenseTitle {
+  float: left;
+  padding: 1%;
 }
 
 .btnDelete {
+  float: right;
   font-size: 15px;
   font-family: comfortaa;
   border: none;
   background: none;
+  padding-top: 10px;
   transition-duration: 0.3s;
 }
 
-.btnEdit:hover {
-  color: rgb(0, 255, 0);
+.btnEdit {
+  float: right;
+  font-size: 15px;
+  font-family: comfortaa;
+  border: none;
+  background: none;
+  padding-top: 10px;
+  transition-duration: 0.3s;
 }
 
 .btnDelete:hover {
   color: rgb(255, 0, 0);
 }
 
+.btnEdit:hover {
+  color: rgb(0, 255, 0);
+}
+
 /*Left*/
 #leftColumn {
   font-family: comfortaa;
   padding: 10px;
-  float: left;
+  float: right;
   width: 28%;
   margin: 0 auto;
   background-color: rgb(20, 20, 20);
