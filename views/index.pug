@@ -4,16 +4,14 @@ block content
   .container
     .rightColumn
       ul#entries
-
     .leftColumn
-      h2 Test för sidokolumn
-      hr
-      p Lite Random Ord På Rad
-      br
-      p Och En Lista Bara För Att
-      ul
-        li En sak
-        li En annan sak
-        li En tredje sak
-
-    script(src='/javascripts/main.js')
+      form(id='formAdd')
+        p
+          | title: 
+          input(id='title', type='text', name='title')
+          | price: 
+          input(id='price', type='text', name='price')
+        input(type='submit', value='Submit')
+  script(src='/javascripts/addExpense.js')
+  script(src='/javascripts/main.js')
+    
