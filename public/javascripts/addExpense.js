@@ -29,6 +29,6 @@ document.getElementById('formAdd').addEventListener('submit', e => {
     .then(json => console.log(json))
     .catch(err => console.log(err));
            
-    window.location.reload();
+    
 
 });
