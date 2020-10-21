@@ -1,11 +1,11 @@
 body {
+  background-attachment: fixed;
+  background-image: linear-gradient(#6e3f98, #d6ab97);  /*(#fff, aquamarine);*/
+  background-repeat: no-repeat;
+  background-size: cover;
   font: 14px Verdana, Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(white, #0099cc);   /*(#fff, aquamarine);*/
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 h2 {
@@ -14,13 +14,13 @@ h2 {
 
 /*Header*/
 #page-header {
-  width: 100%;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 #headContent {
+  color: white;
   padding: 15px;
-  /*background-color: white; later use*/
 }
 
 #headContent img {
@@ -34,21 +34,21 @@ h2 {
 }
 
 #headContent p {
+  letter-spacing: 0.5rem;
   float: right;
-  padding-top: 1rem;
   font-family: comfortaa;
   font-weight: bold;
-  letter-spacing: 0.5rem;
+  padding-top: 1rem;
 }
 
     /*Navbar*/
 #navbar {
+  background-color: black;
   list-style-type: none;
+  margin: 0;
+  overflow: auto;
   padding: 0;
   width: 100%;
-  background-color: black;
-  overflow: auto;
-  margin: 0;
 }
 
 #navbar li {
@@ -56,11 +56,11 @@ h2 {
 }
 
 #navbar li a {
-  display: block;
   color: white;
-  text-align: center;
-  padding: 15px 20px;
+  display: block;
   margin-left: 3rem; 
+  padding: 15px 20px;
+  text-align: center;
   text-decoration: none;
 }
 
@@ -70,29 +70,29 @@ h2 {
 
 /*Block content- (below navbar)*/
 .container {
-  overflow: auto;
-  width: 80%;
   margin:0 auto;
+  overflow: auto;
   padding: 0;
+  width: 80%;
 }
 
 /*right*/
 #rightColumn {
-  font-family: comfortaa;
+  background-color: rgb(20, 20, 20);
+  border-radius: 5px;
   color: white;
   float: right;
-  width: 65%;
-  padding: 10px;
-  background-color: rgb(20, 20, 20);
+  font-family: comfortaa;
   margin: 0 auto;
   margin-left: 3%;
-  border-radius: 5px;
+  padding: 10px;
+  width: 65%;
 }
 
   /*Content- entries*/
 #entries {
-  padding: 0;
   font-family: comfortaa;
+  padding: 0;
 }
 
 .entry {
@@ -102,21 +102,21 @@ h2 {
 
     /*Gradient border*/
 .module-border-wrap {
+  background: linear-gradient(to right, aquamarine, #b700ff);
   border-radius: 3px;
-  width: 60%;
   margin: 0 auto;
   margin-bottom: 20px;
-  position: relative;
-  background: linear-gradient(to right, aquamarine, violet);
   padding: 3px;
+  position: relative;
+  width: 60%;
 }
 
 .module {
   background-color:rgb(250, 250, 250);
   border-radius: 3px;
   color: black;
-  padding: 0rem; /*0 = Thiccc top border*/
-  height: 50px;
+  height: 60px;
+  padding: 2px;
 }
 
     /*Entries info*/
@@ -126,22 +126,26 @@ h2 {
 }
 
 .btnDelete {
+  background: none;
+  border: none;
+  bottom: 5px;
   float: right;
   font-size: 15px;
   font-family: comfortaa;
-  border: none;
-  background: none;
-  padding-top: 10px;
+  position: absolute;
+  right: 5px;
   transition-duration: 0.3s;
 }
 
 .btnEdit {
+  background: none;
+  border: none;
+  bottom: 5px;
   float: right;
   font-size: 15px;
   font-family: comfortaa;
-  border: none;
-  background: none;
-  padding-top: 10px;
+  position: absolute;
+  right: 65px;
   transition-duration: 0.3s;
 }
 
@@ -152,17 +156,19 @@ h2 {
 .btnEdit:hover {
   color: rgb(0, 255, 0);
 }
+/*Edit page style at end of left column*/
+
 
 /*Left*/
 #leftColumn {
-  font-family: comfortaa;
-  padding: 10px;
-  float: right;
-  width: 28%;
-  margin: 0 auto;
   background-color: rgb(20, 20, 20);
-  color: white;
   border-radius: 5px;
+  color: white;
+  font-family: comfortaa;
+  float: right;
+  margin: 0 auto;
+  padding: 10px;
+  width: 28%;
 }
 
 #leftColumn p {
@@ -175,33 +181,56 @@ h2 {
 }
 
 #leftColumn .button {
+  background: rgb(250, 250, 250);
+  border: 2px solid #00ffde; 
+  border-radius: 3px;
+  color: black;
   font-family: comfortaa;
   font-size: 0.8rem;
   font-weight: bold;
-  background: rgb(250, 250, 250);
-  color: black;
-  border: 2px solid #00abe4; 
   padding: 0.5rem;
   transition-duration: 0.4s;
-  border-radius: 3px;
+  
 }
 
 #leftColumn .button:hover {
-  background: #00abe4;
+  background: #00ffde;
   color:  rgb(20, 20, 20);
 }
 
+/*  Edit page back button*/
+#leftColumn a{
+  background: rgb(250, 250, 250);
+  border: 2px solid #00ffde; 
+  border-radius: 3px;
+  color: black;
+  float: right;
+  font-family: comfortaa;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+#leftColumn a:hover {
+  background: #00ffde;
+  color:  rgb(20, 20, 20);
+}
+
+
 /*Footer*/
 #page-footer {
-  width: 100%;
-  height: 250px;
   background-color: rgb(20, 20, 20);
+  height: 250px;
   margin-top: 60px;
+  width: 100%;
 }
 
 #footContent {
-  padding: 20px;
   color: white;
+  padding: 20px;
 }
 
 #footContent p {
